@@ -1,0 +1,11 @@
+package KieRule;
+
+import com.example.drools.RuleEngine.Model.Item;
+
+rule "${id}"
+when
+itemObject : Item(cardType=="${ruleName}" && price>${price});
+then
+System.out.println("\n price"+${price});
+itemObject.setDiscount(${discountAmount});
+end;
