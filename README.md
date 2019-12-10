@@ -15,7 +15,9 @@ Look into application.properties for DB setup
 ## Usage
 
 Add A Rule :
+
 ```
+POST : "localhost:8080/offer"
 {
 	"id" : 1,
 	"ruleName" : "SBI",
@@ -26,6 +28,7 @@ Add A Rule :
 
 Add An Item :
 ```
+POST : "localhost:8080/addItem"
 {
 	"name" : "Mobile",
 	"cardType" : "SBI",
@@ -35,6 +38,7 @@ Add An Item :
 
 Execute Rules :
 ```
+POST : "localhost:8080/order"
 {
     "name": "Mobile",
     "cardType": "SBI",
