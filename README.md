@@ -83,4 +83,5 @@ export default function() {
 
 ## Future Plans
 
-Get A better Sharding Strategy for better performance.
+1. Get A better Sharding Strategy for better performance.
+2. Running Different shards in different threads. 
